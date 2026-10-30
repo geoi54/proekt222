@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a3641; 
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+.landing-container {
+    width: 100%;
+    max-width: 1200px; 
+    
+    background-image: url('img/Frame 15 (5).png');
+    
+    background-position: center;  
+    background-attachment: fixed; 
+    
+    padding: 0 50px 50px 50px; 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px; 
+    margin-bottom: 40px;
+    margin-left: -50px;  
+    margin-right: -50px; 
+    padding: 0 50px;     
+    background-color: transparent; 
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px; 
+    font-weight: bold;
+    margin-right: 15px; 
+}
+
+.logo-image {
+    height: 54px; 
+    display: block;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 30px; 
+    font-size: 15px;   
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.hero-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.main-title {
+    font-size: 46px; 
+    font-weight: bold; 
+    margin: 0;
+}
+
+.hero-right-image {
+    max-width: 50%; 
+    height: auto;
+    max-height: 200px; 
+    object-fit: contain;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-wrapper {
+    width: 48%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.star {
+    font-size: 32px;
+    color: yellow;
+    margin-bottom: 12px;
+}
+
+.card-content {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    font-size: 15px;
+    line-height: 1.5;
+    height: 200px; 
+    border-radius: 16px; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flex-reverse {
+    flex-direction: column-reverse;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card-inner-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.shadow-chip {
+    width: 54px; 
+    height: 54px; 
+    margin-top: 10px;
+}
+
+.flex-reverse .card-inner-icon {
+    margin-bottom: 12px;
+}
+
+.how-it-works-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.section-title-right {
+    font-size: 30px;
+    font-weight: bold; 
+    align-self: flex-end;
+    margin-bottom: 35px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-item {
+    width: 48%;
+    font-size: 15px;
+    line-height: 1.5;
+    border-top: 2px solid white; 
+    padding-top: 25px;
+}
+
+.events-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.main-title-static {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.events-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.events-left, .events-right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-line {
+    font-size: 15px;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.info-banner-section {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+.info-banner {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    width: 60%; 
+    font-size: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.cta-stars {
+    display: flex;
+    justify-content: space-between;
+    width: 30%; 
+    margin-bottom: 15px;
+}
+
+.cta-star {
+    font-size: 26px;
+    color: white;
+}
+
+.cta-banner {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    width: 100%; 
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.trust-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.trust-title {
+    font-size: 32px;
+    font-weight: bold; 
+}
+
+.footer {
+    background-color: gray; 
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 28px 28px 0 0;
+    margin-left: -50px;  
+    margin-right: -50px;
+    margin-bottom: -50px;
+    box-sizing: border-box;
+}
+
+.footer-phone {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-label {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.footer-email, .footer-name {
+    font-size: 15px;
+}
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="landing-container">
+    
+        <div class="header">
+            <div class="logo-container">
+                <div class="logo">cuber.drop</div>
+                <img class="logo-image" src="img/Group 1 (1).png" alt="Logo Icon">
+            </div>
+            <div class="nav-menu">
+                <div class="nav-item">О нас</div>
+                <div class="nav-item">Бизнес</div>
+                <div class="nav-item">Тарифы</div>
+                <div class="nav-item">Отзывы</div>
+            </div>
+        </div>
+    
+        <div class="hero-section">
+            <div class="hero-title-container">
+                <div class="main-title">Казино будущего</div>
+                <img class="hero-right-image" src="img/images (2) 1.png" alt="Hero Illustration">
+            </div>
+    
+            <div class="cards-container">
+                <div class="card-wrapper">
+                    <div class="star">✦</div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            Наш проект - это лучший способ провести вечер в атмосфере азарта без использования настоящих
+                            денег.
+                        </div>
+                        <img class="card-inner-icon shadow-chip" src="img/oooo2.png" alt="Фишка">
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="star">✦</div>
+                    <div class="card-content flex-reverse">
+                        <img class="card-inner-icon" src="img/jean_victor_balin_card_trefle 1.png" alt="Клевер">
+                        <div class="card-text">
+                            Это прозрачная кибер-платформа, где вместо денег игроки мгновенно ставят цифровые токены.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="how-it-works-section">
+            <div class="section-title-right">как все работает?</div>
+    
+            <div class="steps-container">
+                <div class="step-item">
+                    При входе каждому человеку на счет поступает 1000 токенов, он может или потратить их или купить вещи в
+                    нашем магазине.
+                </div>
+                <div class="step-item">
+                    Люди могут обменивать свои токены между собой или ставить их в различных играх.
+                </div>
+            </div>
+        </div>
+    
+        <div class="events-section">
+            <div class="main-title-static">Наши мероприятия</div>
+    
+            <div class="events-grid">
+                <div class="events-left">
+                    <div class="event-line">✦ кибер покер (вт - чт)</div>
+                    <div class="event-line">✦ турнир "Межгалактическая удача" (каждое вс)</div>
+                    <div class="event-line">✦ Карты на выбывание (пт - сб)</div>
+                </div>
+                <div class="events-right">
+                    <div class="event-line">★ Рулетка на миллион - для участия нужно заплатить 10000 токенов.</div>
+                    <div class="event-line">Проводится 1 раз в месяц.</div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="info-banner-section">
+            <div class="info-banner">
+                Работники помогут разобраться в нашей системе, чтобы каждому человеку понравился вечер и атмосфера в казино.
+                ♣
+            </div>
+        </div>
+    
+        <div class="cta-section">
+            <div class="cta-stars">
+                <div class="cta-star">✦</div>
+                <div class="cta-star">✦</div>
+            </div>
+            <div class="cta-banner">
+                Чтобы попасть в наше казино напишите нашему менеджеру
+            </div>
+        </div>
+    
+        <div class="trust-section">
+            <div class="trust-title">Нам можно доверять!</div>
+        </div>
+    
+        <div class="footer">
+            <div class="footer-phone">номер телефона: 79159240567</div>
+            <div class="footer-contacts">
+                <div class="footer-label">контакты:</div>
+                <div class="footer-email">gsgrebenev@edu.hse.ru</div>
+                <div class="footer-name">Гребенев Георгий</div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+
+</html>
